@@ -20,6 +20,8 @@ function addData() {
 
 function removeAdmin() {
   //Write your code here, just console.log
+  let removeAdmin = arr.filter(item => item.profession !== 'admin');
+  console.log(removeAdmin);
 }
 
 function concatenateArray() {
