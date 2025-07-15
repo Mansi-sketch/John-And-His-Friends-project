@@ -8,10 +8,20 @@ let arr = [
 
 function PrintDeveloperbyMap() {
   //Write your code here , just console.log
+   arr.map(item =>{
+    if (item.profession === 'developer'){
+      console.log(item);
+    }
+  });
 }
 
 function PrintDeveloperbyForEach() {
   //Write your code here , just console.log
+  arr.forEach(item=>{
+    if(item.profession === 'developer'){
+      console.log(item);
+    }
+  })
 }
 
 function addData() {
@@ -31,6 +41,6 @@ function concatenateArray() {
   { id: 5, name: "Manish", age: "25", profession: "AI/Ml" },
   { id: 6, name: "Raghav", age: "25", profession: "C++ developer" },
 ];
-let newArray = arr.concate(arr1);
+let newArray = arr.concat(arr1);
 console.log(newArray);
 }
